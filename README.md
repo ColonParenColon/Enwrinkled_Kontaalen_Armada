@@ -1,8 +1,10 @@
 # Enwrinkled_Kontaalen_Armada
-Mod for Annihilate The Spance, adds a new faction reimagining the Kontaal if they "locked in" and "efficiencized" (sic)
-
-Description of the changes made:
-
+Mod for Annihilate The Spance, adds a new faction reimagining the Kontaal if they "locked in" and "efficiencized" (sic)  
+  
+Main goal was to make the ships a wee bit (read: a lot) more powerful without just doing a number boost while also changing their general use-cases to encourage different playstyles.    
+  
+Changes made:  
+  
 ***********************  
 ## DRONES  
   Jipper:  
@@ -69,9 +71,9 @@ Description of the changes made:
 ***********************  
 ## HEAVIES  
   Abrundonell:  
-    -Hightrack Autoguns were replaced with Point Shadow Beams  
-    -Gets close to enemy armor and quickly shreds it.  
-    -Very weak to missiles and drones from lack of PD.  
+	-Hightrack Autoguns were replaced with Point Shadow Beams  
+	-Gets close to enemy armor and quickly shreds it.  
+	-Very weak to missiles and drones from lack of PD.  
 		  
   Barvek:  
     -Dekker. Close range heat gun.  
@@ -115,9 +117,23 @@ Description of the changes made:
 			  
   Yobegregor:  
     -Given a bit more shred, enough to make it deadlier to heavies.  
-      -Will still nead an Abrundonell or Tradnios to tear down capital armor, but those are frontline so who cares.  
+    -Will still need an Abrundonell or Tradnios to tear down capital armor, but those are frontline so who cares.  
 			  
   Untresnafol:  
     -Ate a Soul Warden and now launches nukes. :3  
 		  
 ***********************  
+  
+## TO-DO
+-Fix Ekudon Magshock Cannons visuals (bring back the cone!)  
+-Give Tollys something real.  
+-Either get the reyden to focus on backline (and do less overall damage) or find a different niche (maybe missiles)  
+-Switch Hakurr gun with a close range ant-armour weapon (Fauss covers the AoE field, so now lights are missing an anti-armour)  
+-Weaken Dauwns (Somehow they eat armour faster now despite reducing the rate. Probably some weird interaction with vulnerability)  
+-Rework Jippers maybe. The PD clog is cool, but Kontaal just doesn't have the missiles or drone output for it to feel useful.  
+    --Maybe a capture drone? Some sort of 0 range ECM beam type thing. Just need to figure out how that actually works.  
+-Maybe add turrets?  
+-Jeren update. If you mine the rocks to make ships, it stands to reason you can mine the ships too.  
+-Do the same thing to the Vaalkorei, I'm thinking Harriers with plasma guns, Super-ECM Kingfishers, PD-able Magpie bombs, and an unchanged Corvus.  
+-Add actual database entries.  
+-Try to learn modeling to make them more visually distinct (or, maybe just to turn it into its own faction, but that sounds like a lot of work for a joke).  
