@@ -1,0 +1,21 @@
+﻿return {
+    id = "01_MT_Glow_Heal",
+    shader = "Shader Graphs/Ship Glow Shader",
+    keywords = { "_EMISSION" },
+    properties = {
+        _CloakOpacity = 1,
+        _Color = { 1, 1, 1, 1 },
+        _DamageEnd = 0,
+        _DamageStart = 0.8,
+        _Dead = 0,
+        _DitherScale = 1,
+        _EmissionColor = { 0.542706, 1.414214, 0, 1 },
+        _Intensity = 1,
+        _Metallic = 0.5,
+        _Min = 0.5,
+        _QueueControl = 0,
+        _QueueOffset = 0,
+        _Smoothness = 0,
+        Damage = 0,
+    },
+}

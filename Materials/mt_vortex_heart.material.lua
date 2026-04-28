@@ -1,0 +1,23 @@
+﻿return {
+    id = "mt_vortex_heart",
+    shader = "Shader Graphs/VortexUnlit_SG",
+    properties = {
+        _Center = { 0.5, 0.5, 0, 0 },
+        _Color = { 1, 0, 0.998072, 1 },
+        _Direction = 1,
+        _FadeOuter = 0.29,
+        _FadeSoftness = 0.095,
+        _FalloffInner = 0,
+        _FalloffOuter = 0.452,
+        _InvRStrength = 0.08,
+        _MainTex = { texture = "Textures/noise_10_vortex.png" },
+        _NoiseSpeed = { 0.2, 0.1, 0, 0 },
+        _NoiseTiling = { 2, 2, 0, 0 },
+        _Opacity = 0.13,
+        _QueueControl = 0,
+        _QueueOffset = 0,
+        _SpinSpeed = -0.5,
+        _Twist = 2.2,
+        Opacity = 1,
+    },
+}

@@ -1,0 +1,21 @@
+﻿return {
+    id = "01_MT_ShadowGlow",
+    shader = "Shader Graphs/Ship Glow Shader",
+    keywords = { "_EMISSION" },
+    properties = {
+        _CloakOpacity = 1,
+        _Color = { 0, 0, 0, 0.760784 },
+        _DamageEnd = 0,
+        _DamageStart = 0.8,
+        _Dead = 0,
+        _DitherScale = 1,
+        _EmissionColor = { 0.117346, 0.046667, 0.933333, 4 },
+        _Intensity = 1,
+        _Metallic = 0,
+        _Min = 0.5,
+        _QueueControl = 0,
+        _QueueOffset = 0,
+        _Smoothness = 0.5,
+        Damage = 0,
+    },
+}

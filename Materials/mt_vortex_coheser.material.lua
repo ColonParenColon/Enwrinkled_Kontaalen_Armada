@@ -1,0 +1,23 @@
+﻿return {
+    id = "mt_vortex_coheser",
+    shader = "Shader Graphs/VortexUnlit_SG",
+    properties = {
+        _Center = { 0.5, 0.5, 0, 0 },
+        _Color = { 0.396226, 0.338801, 0.238483, 1 },
+        _Direction = 1,
+        _FadeOuter = 0.29,
+        _FadeSoftness = 0.12,
+        _FalloffInner = 0,
+        _FalloffOuter = 0.452,
+        _InvRStrength = 0.1,
+        _MainTex = { texture = "Textures/noise_10_vortex.png" },
+        _NoiseSpeed = { 0, 0, 0, 0 },
+        _NoiseTiling = { 2, 2, 0, 0 },
+        _Opacity = 0.64,
+        _QueueControl = 0,
+        _QueueOffset = 0,
+        _SpinSpeed = -0.2,
+        _Twist = 1.5,
+        Opacity = 1,
+    },
+}

@@ -1,0 +1,155 @@
+ ========================
+
+ Welcome to ATS modding.
+ 
+ This is Luke AP, I'll try to walk you through how a mod works and what to do.
+ You'll need these programs installed before you do anything:
+ 
+ 1. Blender. For creating 3D models.
+ 2. Visual Studio Code (it's lightweight) or any IDE with LUA support to make editing your lua files easier and help you spot mistakes.
+     - In Visual Studio Code, select your mod folder and it will load in all the files to the Explorer tab.
+
+ ========================
+  
+ What can a mod do?
+ 
+ Mods can add factions, ships, structures, missiles, bullets, weapons and stuff to the game.
+ This is rather simple "character sheet" modding, you don't have to write any code. Just copy files and edit the parts you care about.
+ However do remember to checkout the official Discord server for updated documentation or just to get help. I have tried to cover everything, but it's very complicated.
+ 
+ In the future (2025/08/11) mods will be able to add audio, portraits, and other things to the game. I just don't have the time for it at the moment.
+ 
+ ========================
+ 
+ Advice to novice modders:
+ 
+ Have fun!!!
+ 
+ Start small, do not make the same mistake as many others and try to make the perfect most awesome mod.
+ Everyone, myself included, is first and foremost an idiot on anything he hasn't done before. The only way to make "good" mods is to practice on small things and get good at specific things first.
+ Making and fixing mistakes is necessary to learning. If you have a tiny project, you can learn quickly and overhaul quickly. If you have a massive project, you will learn slowly, overhaul slowly, and burn out long before it is complete.
+ 
+ Opinion-seeking advice; don't show off your mod until you have something to show off. There's not much that can be said about a white square :)P . But don't wait until your done. If you're done it's more effort to go back and make changes. Especially from a balance perspective. Seek out other people's opinions once you have something that is far enough along to be opinionable. And be nice to those that take the time to comment, because very few will.
+ 
+ Finally, compress your mod folder (zip, 7zip, winrar, etc) then please feel free to make a forum post in the Discord server with your zipped mod file. Depending on how large it is you may need to use a file hosting website.
+ 
+ ========================
+ 
+	MAKING A FACTION
+ 
+ A faction is the container for all your ships, and stuff.
+ - - - - - - - - - - - -
+ 
+ Setup
+ 
+ First ensure that your mod folder has all these files:
+ 1. .manifest.lua
+ 2. .faction.lua
+ 3. .unit.lua
+ 4. .weapons.lua
+ If you are missing any of these, go get it from the ATS official Mod Example "The Glave Fleet" on our Discord server. (If that isn't still around, modders of the far future, you'll just have to go hunting I'm sorry)
+ 
+ These files provide a full template for each of the things we're going to be adding to the game.
+ 
+ - - - - - - - - - - - -
+ 
+ All files have an explanation inside themselves for what they do, but here is a summary.
+ 
+ - - - - - - - - - - - -
+ 
+ .manifest.lua
+ 
+ This file controls the modID of your mod, among other attributes.
+ 
+ The modID is crucial and must be unique as it is used to identify your mod's models, weapons, and units in the game's code.
+ Feel free to use reasonably unique stuff like LukeAPGlaveFleet100 as your modID, but if you want to be totally safe here is a GUID generator https://www.uuidgenerator.net/guid
+ 
+ The modID also allows other mods to referance your mod, or the other way around. (using sounds from a Sound Pack mod, or muzzle flash meshs from a Models Pack map, etc)
+ If two mods have the same ID the game will only use the one found first.
+ It is also saved in Maps, in order to tell users what mods they need to get for the map to work.
+ 
+ Version, helps the game know if the player's local version of the mod is out of date when looking at other mods or maps. EG. a map could expect v2.0.0 while the local copy is v1.5.0. Then the map can tell the player "Hey this mod probably needs an update."
+ 
+ - - - - - - - - - - - -
+ 
+ .faction.lua
+ 
+ This defines a faction itself, so that it and it's units can appear in Skirmish, the Map Editor, and Databank.
+ It controls the Skirmish Loadout, Skirmish Platform, Skirmish AI, aswell as specific catagories for the Databank such as ships and structures.
+ 
+ - - - - - - - - - - - -
+ 
+ .materials.lua
+ 
+ Defines all the materials that you will be using to "paint" your units. Such as hull, glows, thrusters, muzzle flashes, etc.
+ 
+ - - - - - - - - - - - -
+ 
+ .unit.lua
+ 
+ Defines one unit. A unit is a very broad term, and can be anything. Such as a ship, structure, drone, missle, rock, debris or bullet.
+ 
+ - - - - - - - - - - - -
+ 
+ .weapons.lua
+ 
+ Defines one or more weapons for use by units. Also handles the info needed for displaying them in the databank.
+  Weapons, like units, are a very broad term and can be used for anything such as lasers, bullet warheads, missile warheads, harmless visuals, spawning units (drone/missile launchers), etc.
+ 
+ - - - - - - - - - - - -
+  
+       FIRST STEPS
+ 
+ - - - - - - - - - - - -
+
+ A faction must have a unique ID between 100 and 214,748
+ This is to prevent conflict with other mods, as maps and other mods may rely on them.
+ This is due to some rather ground-level architecture in ATS that isn't possible to change.
+  
+ Before doing anything, you must pick a unique numerical faction id. Between 100 and 214,748.
+ FactionID must be unique to 
+ You must also remember to prefix any unit typeIDs or weaponIDs with your factionID to prevent conflicts with other mods or ATS itself.
+ 
+ Sadly I cannot automate this for you, so you'll have to make sure you don't pick an ID that is currently used by any major mods. Chat with your fellow modders.
+ 
+ In ATS we ID our units and weapons using the factionID, a category, and the index of the unit in our list.
+ 
+ ...FAIII (...F = factionID, A = unit catagory, I = unit index)
+ 
+ eg. the Kontaalen (id 1), Tolly 		(ship 1, index 0) 		is typeID = 11000
+ eg. the Kontaalen (id 1), Katalosteer 	(ship 1, index 1) 		is typeID = 11001
+ eg. the Kontaalen (id 1), Coheser 	(structure 2, index 4) 	is typeID = 12004
+ eg. the Glowfish  (id 5), Aggressor 	(ship 1, index 0) 		is typeID = 51000
+ 
+ Go to the .faction.lua and setup the values inside to your liking. Heed the comments.
+ 
+ - - - - - - - - - - - -
+  
+	MAKING A UNIT
+	
+ - - - - - - - - - - - -
+ 
+ UNIT MESH
+
+ First you need a model mesh for your ship. Go ahead and make a copy of the 1001000_glave_assault.blend file. Rename it and open it in Blender.
+ I can't teach you Blender, so you'll have to figure out how to make a model, and assign materials to that model yourself.
+ Bare in mind that the materials you set will not be used by ATS, they are instead "material slots" that we will fill in with custom defined materials via .materials.lua
+ 
+ NOTICE: Unit models MUST be normalised to 1 on the horizontal axis, aka, the longest part of either your ship's length or width must be 1. This effects the Selection Circle among other things.
+ You can set the dimensions via hotkey N (item) > Dimensions > X/Y/Z = 1, then copy the Scale and paste to the other scale values. Then with mouse in the scene, [CTRL + A > Scale] to apply this scaling.
+ 
+ Assuming that you now know some basic Blender stuff, (how to make a model and how to assign materials in Blender)
+ I have already prepared the file with all the relevant export settings, all you need to do is go (File > Export > glTF 2.0) to your mod folder.
+ 
+ - - -
+
+ UNIT DEFINITION
+ 
+ OK, to the actual unit definition. When making a unit, the components we give it will determine whether it acts like a ship, a resource generator, or a bullet.
+ 
+ 
+
+
+ TO BE CONTINUED, when I have time.
+
+ = = = = = = = = = = = = 
