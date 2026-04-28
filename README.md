@@ -57,7 +57,7 @@ Changes made:
 		  
   Partell:  
     -The Wick torpedos now cloak  
-    -They uncloak 2.5 units from an enemy.   
+    -As a mercy they uncloak 2.5 units from an enemy.   
 		  
   Lantra:  
     -Given a long range point light cannon.  
