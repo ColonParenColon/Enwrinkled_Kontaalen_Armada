@@ -22,8 +22,7 @@ Changes made:
 ***********************  
 ## LIGHTS  
    Tolly:  
-     -Couldn't think of anything, so just made its death explosion push away friendly units (good for breaking up swarms so AOE weapons  
-      are less useful)  
+     -Couldn't think of anything, so just made its death explosion push away friendly units (good for breaking up swarms so AOE weapons are less useful)  
 			  
    Kana:  
      -Made it hang back and use the Alkanador PD laser (acts more like an Auxilia now)  
