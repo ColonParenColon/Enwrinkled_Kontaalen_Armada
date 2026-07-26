@@ -91,7 +91,7 @@
         targetingPriorityMultiplier = 0,
         untargetableTime = 0,
         phaseBlockFraction = 0,
-        lifetime = 1.5,
+        lifetime = 2.5,
         explodeOnTimeout = false,
         explosionType = "FLAK",
         explosionDamageRadiusMult = 0,

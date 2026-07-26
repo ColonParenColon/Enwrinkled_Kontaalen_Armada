@@ -777,8 +777,8 @@
                     rotation = { 0, 0, 0 },
                     scale = { 0.023296, 0.023296, 0.023296 },
                     weaponVisualConfig = {
-                        laserColour = { 0.35, 0.634641, 1, 1 },
-                        intensity = 2.5,
+                        laserColour = { 1, 0.534641, 0.2, 1 },
+                        intensity = 1.5,
                         useWeaponLaserDescription = true,
                         laserDescription = {
                             duration = 0,
@@ -845,8 +845,8 @@
                     rotation = { 0, 0, 0 },
                     scale = { 0.023296, 0.023296, 0.023296 },
                     weaponVisualConfig = {
-                        laserColour = { 0.35, 0.634641, 1, 1 },
-                        intensity = 2.5,
+                        laserColour = { 1, 0.534641, 0.2, 1 },
+                        intensity = 1.5,
                         useWeaponLaserDescription = true,
                         laserDescription = {
                             duration = 0,
@@ -913,8 +913,8 @@
                     rotation = { 0, 0, 0 },
                     scale = { 0.023296, 0.023296, 0.023296 },
                     weaponVisualConfig = {
-                        laserColour = { 0.35, 0.634641, 1, 1 },
-                        intensity = 2.5,
+                        laserColour = { 1, 0.534641, 0.2, 1 },
+                        intensity = 1.5,
                         useWeaponLaserDescription = true,
                         laserDescription = {
                             duration = 0,
@@ -981,8 +981,8 @@
                     rotation = { 0, 0, 0 },
                     scale = { 0.023296, 0.023296, 0.023296 },
                     weaponVisualConfig = {
-                        laserColour = { 0.35, 0.634641, 1, 1 },
-                        intensity = 2.5,
+                        laserColour = { 1, 0.534641, 0.2, 1 },
+                        intensity = 1.5,
                         useWeaponLaserDescription = true,
                         laserDescription = {
                             duration = 0,

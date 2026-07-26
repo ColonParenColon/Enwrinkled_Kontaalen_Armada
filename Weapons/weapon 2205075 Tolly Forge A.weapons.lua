@@ -1,7 +1,7 @@
 ﻿return {
     id = 2205075,
-    name = "Tolly Forge A",
-    blurb = "Forges and Launches Tollies",
+    name = "Fauss Forge A",
+    blurb = "Forges and Launches Fauss",
     metaNote = "Soul Warden",
     hideInDatabank = false,
     displayType = "DRONE",
@@ -85,7 +85,7 @@
         barrelSpacing = 0,
         virtualBarrelOffset = { 0, 0, 0 },
         barrelIndexCurrent = 0,
-        spawnID = 2201000,
+        spawnID = 2201024,
         arrivalData = {
             type = "LAUNCH",
             arrivalDuration = 0,
@@ -98,7 +98,7 @@
         reloadAmount = 0,
         secondsPerCycle = 30,
         secondsPerCycleCurrent = 5,
-        shotsPerCycle = 48,
+        shotsPerCycle = 24,
         shotsPerCycleCurrent = 0,
         simultaniousShots = 4,
         secondsPerShot = 0.5,

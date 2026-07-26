@@ -6,7 +6,7 @@
     hideInDatabank = false,
     displayType = "NORMAL",
     weapon = {
-        weaponType = "LASER",
+        weaponType = "TRACTOR",
         alwaysfire = false,
         magdump = false,
         necrofire = false,

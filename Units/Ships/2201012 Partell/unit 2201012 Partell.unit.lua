@@ -1213,11 +1213,6 @@
         targetingPriorityMultiplier = 0,
         untargetableTime = 0,
         phaseBlockFraction = 0,
-        doesCloaking = false,                 --Can cloak, and become untargetable.
-		isCloaked = false,                    --Current state of cloak.
-		cloakFrac = 0,
-		cloakTime = 1.0,                      -- float: How long it takes to cloak.
-		decloakDistance = 0,                -- float: How close it can get to something before being visible. Used by Glowfish blobs to let them get close enough to targets.
         lifetime = 0,
         explodeOnTimeout = false,
         explosionType = "EXPLOSION",

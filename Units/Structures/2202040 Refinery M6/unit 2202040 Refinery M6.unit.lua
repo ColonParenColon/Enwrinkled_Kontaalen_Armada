@@ -236,7 +236,7 @@
         endRotationUseStructureForward = false,
         noUnitGhost = false,
         usesToSelfdestruct = 0,
-        simultaniousUnitLimit = 1,
+        simultaniousUnitLimit = 4,
         arrivalData = {
             type = "ARRIVE",
             arrivalDuration = 3,

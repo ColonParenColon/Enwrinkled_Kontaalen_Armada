@@ -262,7 +262,7 @@
             isResourceMiner = false,
             acceptFirstValidTarget = false,
             pauseIfHasTarget = false,
-            ignoreUncapturable = false,
+            ignoreUncapturable = true,
             ignoreNonHealRequester = false,
             targetOnlySpecialType = 0,
             secondsPerScan = 0,
@@ -313,8 +313,8 @@
     payload = {
         damage = {
             isNondamaging = false,
-            instances = 50,
-            damage = 250,
+            instances = 25,
+            damage = 2500,
             piercing = 0,
             shred = 0,
             heat = 125,

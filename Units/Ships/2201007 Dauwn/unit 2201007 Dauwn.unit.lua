@@ -354,11 +354,6 @@
         targetingPriorityMultiplier = 0,
         untargetableTime = 0,
         phaseBlockFraction = 0,
-        doesCloaking = false,                 --Can cloak, and become untargetable.
-		isCloaked = false,                    --Current state of cloak.
-		cloakFrac = 0,
-		cloakTime = 0,                      -- float: How long it takes to cloak.
-		decloakDistance = 0,                -- float: How close it can get to something before being visible. Used by Glowfish blobs to let them get close enough to targets.
         lifetime = 0,
         explodeOnTimeout = false,
         explosionType = "EXPLOSION",
@@ -422,6 +417,12 @@
         alwaysFaceCombatTarget = false,
         GoToStructurePlaneForFinalWaypoint = false,
     },
+    isCloaking = true,
+    cloak = {
+        startingCloakFrac = 0,
+        cloakTime = 3,
+        decloakDistance = 4,
+    },
     isRotating = true,
     rotation = {
         turnMode = "Acceleration",
@@ -446,7 +447,7 @@
             isResourceMiner = false,
             acceptFirstValidTarget = false,
             pauseIfHasTarget = false,
-            ignoreUncapturable = false,
+            ignoreUncapturable = true,
             ignoreNonHealRequester = false,
             targetOnlySpecialType = 0,
             secondsPerScan = 0.25,
@@ -479,7 +480,7 @@
             classMultTitan = 4,
             shipMultiplier = 0,
             structureMultiplier = 0,
-            keepTargetMultiplier = 2,
+            keepTargetMultiplier = 1.25,
             scoreBandingSize = 0,
         },
         tracking = {

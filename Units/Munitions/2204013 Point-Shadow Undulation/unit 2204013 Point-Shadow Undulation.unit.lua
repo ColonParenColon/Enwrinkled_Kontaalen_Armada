@@ -260,7 +260,7 @@
             instances = 3,
             damage = 125,
             piercing = 10,
-            shred = 5,
+            shred = 15,
             heat = 0,
             vulnerability = 0,
             decloak = false,

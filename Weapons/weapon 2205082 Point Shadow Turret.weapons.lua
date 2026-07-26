@@ -26,7 +26,7 @@
             instances = 0,
             damage = 5,
             piercing = 0,
-            shred = 0.5,
+            shred = 1,
             heat = 0,
             vulnerability = 0,
             decloak = false,

@@ -1,7 +1,7 @@
-﻿return {
+return {
     id = 2205076,
-    name = "Kana Forge B",
-    blurb = "Forges and Launches Kanas",
+    name = "Dauwn Forge B",
+    blurb = "Forges and Launches Dauwns",
     metaNote = "Soul Warden",
     hideInDatabank = false,
     displayType = "DRONE",

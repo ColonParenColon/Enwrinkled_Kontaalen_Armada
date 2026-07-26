@@ -71,7 +71,7 @@
                     materials = { "MT_Cone" },
                     position = { 0, 0, 0.2383 },
                     rotation = { 0, 0, 0 },
-                    scale = { 0.1, 0.1, 0.1 },
+                    scale = { 0.05, 0.05, 0.05 },
                     weaponVisualConfig = {
                         laserColour = { 0.8, 0.8, 0.8, 0.011765 },
                         intensity = 1,

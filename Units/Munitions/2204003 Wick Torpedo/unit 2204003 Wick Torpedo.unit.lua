@@ -161,11 +161,6 @@
         specialType = 0,
         targetingPriorityMultiplier = 0,
         untargetableTime = 0.15,
-        doesCloaking = true,                 --Can cloak, and become untargetable.
-		isCloaked = false,                    --Current state of cloak.
-		cloakFrac = 0,
-		cloakTime = 0.01,                      -- float: How long it takes to cloak.
-		decloakDistance = 1,                -- float: How close it can get to something before being visible. Used by Glowfish blobs to let them get close enough to targets.
         phaseBlockFraction = 0,
        
         lifetime = 4.2,
@@ -213,6 +208,12 @@
         alertPlayerOnDeath = false,
     },
     isShield = false,
+    isCloaking = true,
+    cloak = {
+        startingCloakFrac = 1,
+        cloakTime = 0.5,
+        decloakDistance = 1.5,
+    },
     isMobile = false,
     isRotating = false,
     doAvoidance = false,

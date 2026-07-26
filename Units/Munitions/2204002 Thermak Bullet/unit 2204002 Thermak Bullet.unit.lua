@@ -92,7 +92,7 @@
         untargetableTime = 0,
         phaseBlockFraction = 0,
         lifetime = 3,
-        explodeOnTimeout = false,
+        explodeOnTimeout = true,
         explosionType = "FLAK",
         explosionDamageRadiusMult = 0,
         explosionSizeOveride = 1.5,

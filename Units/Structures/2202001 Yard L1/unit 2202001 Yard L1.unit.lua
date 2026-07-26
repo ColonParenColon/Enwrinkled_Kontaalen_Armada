@@ -237,8 +237,8 @@
         },
         {
             id = 2201007,
-            spawnTime = 15,
-            spawnTimeStart = 15,
+            spawnTime = 30,
+            spawnTimeStart = 30,
             spawnPointCode = 0,
             spawnVelocity = 0,
             ignoreWaypoints = false,
